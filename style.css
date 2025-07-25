@@ -93,7 +93,7 @@
 /* Optional font import (Bangla) */
 @font-face {
     font-family: 'Li Ador Noirrit Regular';
-    src: url('../asset/fonts/Bangla/Unicode/Li Ador Noirrit Regular.ttf') format('truetype');
+    src: url('Li Ador Noirrit Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -101,7 +101,7 @@
 /* Other Layout Styles */
 body {
     font-family: 'Li Ador Noirrit Regular', 'Noto Sans Bengali', Arial, sans-serif;
-    background: url('../asset/infra bg.png') no-repeat center center fixed;
+    background: url('infra bg.png') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding-top: 110px;
