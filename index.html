@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFRA Admission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-flex">
+            <img src="../asset/Infra-logo.png" alt="ইনফ্রা পলিটেকনিক লোগো" class="logo" />
+            <div>
+                <h1>ইনফ্রা পলিটেকনিক ইনস্টিটিউট, বরিশাল</h1>
+            </div>
+        </div>
+    </header>
+    <section class="hero-section section-box" style="background: none;color: #000;">
+        <div class="college-info">
+            ২০০৩ সালে প্রতিষ্ঠিত ইনফ্রা পলিটেকনিক ইনস্টিটিউট দক্ষ ইঞ্জিনিয়ার তৈরিতে বিশ্বস্ত একটি নাম। আধুনিক ল্যাব,
+            অভিজ্ঞ শিক্ষক ও সরকারি অনুমোদিত BTEB কোর্সে ভর্তি চলেছে – ভবিষ্যৎ গড়ুন আজই!
+        </div>
+    </section>
+    <section class="promo-video">
+        <div class="video-thumbnail" id="videoThumb"
+            style="position:relative; width:100%; max-width:700px; margin:20px auto; cursor:pointer;">
+            <img src="../asset/Infra-thumbnail.png" alt="ভিডিও থাম্বনেইল"
+                style="width:100%; display:block; box-shadow:0 2px 12px rgba(0,0,0,0.12);">
+            <span class="play-icon"
+                style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); background:rgba(0,0,0,0.6); border-radius:50%; padding:3px; display:flex; align-items:center; justify-content:center;">
+                <img src="../asset/play-icon.png" alt="Play" style="width:38px; height:38px; display:block;">
+            </span>
+        </div>
+        <div id="videoContainer" style="display:none;">
+            <video id="promoVideo" src="../asset/infra-video.mp4"
+                style="width:100%; max-width:700px; display:block; margin:20px auto; box-shadow:0 2px 12px rgba(0,0,0,0.12);">
+                আপনার ব্রাউজার ভিডিও সাপোর্ট করে না।
+            </video>
+        </div>
+    </section>
+    <script>
+        document.getElementById('videoThumb').onclick = function () {
+            document.getElementById('videoThumb').style.display = 'none';
+            document.getElementById('videoContainer').style.display = 'block';
+            var vid = document.getElementById('promoVideo');
+            if (vid) {
+                vid.volume = 0.6;
+                vid.play();
+                vid.setAttribute('controls', false);
+            }
+        };
+        document.getElementById('videoContainer').onclick = function () {
+            var vid = document.getElementById('promoVideo');
+            if (vid) {
+                if (!vid.paused) {
+                    vid.pause();
+                } else {
+                    vid.play();
+                }
+            }
+        };
+    </script>
+    <main>
+        <section class="faculties section-box">
+            <h2>আমাদের বিভাগসমূহ</h2>
+            <div class="faculty-list">
+                <div class="faculty">কম্পিউটার</div>
+                <div class="faculty">সিভিল</div>
+                <div class="faculty">ইলেকট্রিক্যাল</div>
+                <div class="faculty">ইলেকট্রনিক্স</div>
+                <div class="faculty">মেরিন</div>
+                <div class="faculty">মেকানিক্যাল</div>
+                <div class="faculty">আর্কিটেকচার</div>
+                <div class="faculty">শিপ বিল্ডিং</div>
+                <div class="faculty">অটো মোবাইল</div>
+                <div class="faculty">টেক্সটাইল</div>
+                <div class="faculty">এ এম টি</div>
+                <div class="faculty">সার্ভেয়িং</div>
+            </div>
+        </section>
+        
+        <section class="admission-info section-box">
+            <h2 >ভর্তি তথ্য</h2>
+            <div style="font-size:1.08rem; color:#222; margin-bottom:1.2em;">
+                <span style="font-weight:bold;">ভর্তির যোগ্যতাঃ</span><br>
+                এস.এস.সি/ O Level/ দাখিল/ ভোকেশনাল/ উন্মুক্ত পাশ। ন্যূনতম জিপিএ ২.০০।
+            </div>
+            <div style="font-size:1.08rem; color:#222;">
+                <span style="font-weight:bold;">ভর্তি সংক্রান্ত যোগাযোগঃ</span><br>
+                <div style="display:flex; gap:2.5em; align-items:flex-start; margin-top:0.5em;">
+                    <div>
+                        01733336431<br>
+                        01733336432
+                    </div>
+                    <div style="text-align:right;">
+                        01733336435<br>
+                        01733336437
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="facilities-info section-box">
+            <div >
+                <h2 style="margin-bottom:1rem; text-align:center; color:#00796b;">আমাদের সুবিধা সমূহ</h2>
+                <ul style="padding-left:1.2em; margin:0;">
+                    <li>আধুনিক ল্যাব ও ক্লাসরুম</li>
+                    <li>অভিজ্ঞ ও প্রশিক্ষিত শিক্ষকবৃন্দ</li>
+                    <li>সরকারি অনুমোদিত ডিপ্লোমা কোর্স</li>
+                    <li>বৃত্তি ও আর্থিক সহায়তা</li>
+                    <li>শৃঙ্খলাপূর্ণ পরিবেশ</li>
+                    <li>বহুমুখী ক্যারিয়ার সুযোগ</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© ২০২৫ ইনফ্রা পলিটেকনিক ইনস্টিটিউট বরিশাল</p>
+    </footer>
+    
+    <!-- Add popup modal HTML just before </body> -->
+    <div id="facultyModal" class="modal"
+        style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.45); z-index:9999; align-items:center; justify-content:center;">
+        <div class="modal-content"
+            style="background:#fff; border-radius:12px; max-width:350px; width:90vw; padding:2rem; box-shadow:0 2px 16px rgba(0,0,0,0.18); position:relative; text-align:center;">
+            <span id="closeModal"
+                style="position:absolute; top:10px; right:18px; font-size:1.7rem; cursor:pointer;">&times;</span>
+            <h3 id="modalTitle"
+                style="margin-bottom:1rem; color:#00796b;"></h3>
+            <div id="modalBody"
+                style="font-size:1.1rem; color:#333; text-align:left;"></div>
+        </div>
+    </div>
+    <script>
+        // Faculty popup logic
+        const faculties = document.querySelectorAll('.faculty');
+        const modal = document.getElementById('facultyModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalBody = document.getElementById('modalBody');
+        const closeModal = document.getElementById('closeModal');
+        const scholarshipNote = '<br><br><span style="color:#c62828;"><strong>বি দ্রঃ</strong> সকল শিক্ষার্থী প্রতি সেমিস্টারে ৫০০০ টাকা সরকারি বৃত্তি পাবে।</span>';
+        const facultyDetails = {
+            'কম্পিউটার': 'কম্পিউটার বিভাগে আধুনিক সফটওয়্যার, হার্ডওয়্যার ও নেটওয়ার্কিং শেখানো হয়।<br><br><strong>ভর্তি ফি:</strong> ৫৭০০ টাকা<br><strong>মাসিক ফি:</strong> ২৫০০ টাকা<br><strong>সেশন ফি:</strong> ২০০০ টাকা' + scholarshipNote,
+            'সিভিল': 'সিভিল বিভাগে নির্মাণ, ডিজাইন ও স্থাপত্যের মৌলিক বিষয় শেখানো হয়।' + scholarshipNote,
+            'ইলেকট্রিক্যাল': 'ইলেকট্রিক্যাল বিভাগে বিদ্যুৎ, ইলেকট্রিক সার্কিট ও পাওয়ার সিস্টেম শেখানো হয়।' + scholarshipNote,
+            'ইলেকট্রনিক্স': 'ইলেকট্রনিক্স বিভাগে আধুনিক ইলেকট্রনিক ডিভাইস ও সার্কিট শেখানো হয়।' + scholarshipNote,
+            'মেরিন': 'মেরিন বিভাগে জাহাজ, নৌযান ও সমুদ্র প্রযুক্তি শেখানো হয়।' + scholarshipNote,
+            'মেকানিক্যাল': 'মেকানিক্যাল বিভাগে যন্ত্রপাতি, ডিজাইন ও উৎপাদন প্রযুক্তি শেখানো হয়।' + scholarshipNote,
+            'আর্কিটেকচার': 'আর্কিটেকচার বিভাগে স্থাপত্য, ডিজাইন ও পরিকল্পনা শেখানো হয়।' + scholarshipNote,
+            'শিপ বিল্ডিং': 'শিপ বিল্ডিং বিভাগে জাহাজ নির্মাণ ও ডিজাইন শেখানো হয়।' + scholarshipNote,
+            'অটো মোবাইল': 'অটো মোবাইল বিভাগে যানবাহন, ইঞ্জিন ও মেরামত শেখানো হয়।' + scholarshipNote,
+            'টেক্সটাইল': 'টেক্সটাইল বিভাগে কাপড়, ফ্যাব্রিক ও উৎপাদন প্রযুক্তি শেখানো হয়।' + scholarshipNote,
+            'এ এম টি': 'এ এম টি বিভাগে অ্যাপারেল ম্যানুফ্যাকচারিং ও টেকনোলজি শেখানো হয়।' + scholarshipNote,
+            'সার্ভেয়িং': 'সার্ভেয়িং বিভাগে ভূমি পরিমাপ, মানচিত্র ও জিওডেসি শেখানো হয়।' + scholarshipNote
+        };
+        
+        const facultyNamesBn = {
+            'কম্পিউটার': 'কম্পিউটার বিভাগ',
+            'সিভিল': 'সিভিল বিভাগ',
+            'ইলেকট্রিক্যাল': 'ইলেকট্রিক্যাল বিভাগ',
+            'ইলেকট্রনিক্স': 'ইলেকট্রনিক্স বিভাগ',
+            'মেরিন': 'মেরিন বিভাগ',
+            'মেকানিক্যাল': 'মেকানিক্যাল বিভাগ',
+            'আর্কিটেকচার': 'আর্কিটেকচার বিভাগ',
+            'শিপ বিল্ডিং': 'শিপ বিল্ডিং বিভাগ',
+            'অটো মোবাইল': 'অটো মোবাইল বিভাগ',
+            'টেক্সটাইল': 'টেক্সটাইল বিভাগ',
+            'এ এম টি': 'এ এম টি বিভাগ',
+            'সার্ভেয়িং': 'সার্ভেয়িং বিভাগ'
+        };
+        faculties.forEach(faculty => {
+            faculty.addEventListener('click', function () {
+                modalTitle.textContent = facultyNamesBn[faculty.textContent] || faculty.textContent;
+                modalBody.innerHTML = facultyDetails[faculty.textContent] || 'ভর্তি সংক্রান্ত বিস্তারিত তথ্য শীঘ্রই আসছে!';
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        closeModal.onclick = function () {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        };
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        };
+    </script>
+</body>
+
+</html>
